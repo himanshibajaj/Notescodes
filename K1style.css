@@ -1,0 +1,144 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  line-height: 1.6;
+  background-color: #f0f4f8;
+  color: #333;
+  padding: 0 15px;
+}
+
+/* Header and Nav */
+header {
+  background: linear-gradient(to right, #0059b3, #003d80);
+  color: white;
+  padding: 25px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+nav h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffcc00;
+}
+
+/* Section Styles */
+section {
+  margin: 40px 0;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h2 {
+  color: #003d80;
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+}
+
+/* Contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin-top: 20px;
+}
+
+form input,
+form textarea {
+  margin-bottom: 15px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #0059b3;
+  outline: none;
+}
+
+form button {
+  background-color: #0059b3;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #004080;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #003d80;
+  color: white;
+  font-size: 1rem;
+  margin-top: 40px;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  section {
+    padding: 20px;
+  }
+}
