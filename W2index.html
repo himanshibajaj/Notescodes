@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>JavaScript</h1>
+    <p>Variables, Conditions & Event Handling</p>
+
+    <div class="card">
+      <label>Enter your Age:</label>
+      <input type="number" id="age" placeholder="e.g. 21">
+      <button onclick="checkAge()">Check Age</button>
+      <p id="ageResult"></p>
+    </div>
+
+    <div class="card">
+      <label>Enter a Grade (A/B/C/D/F):</label>
+      <input type="text" id="grade" maxlength="1" onkeyup="checkGrade()">
+      <p id="gradeResult"></p>
+    </div>
+
+    <div class="card">
+      <label>Enter any Number:</label>
+      <input type="number" id="number" placeholder="e.g. 5">
+      <button onclick="checkEvenOdd()">Check Even/Odd</button>
+      <p id="numResult"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
