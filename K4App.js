@@ -1,4 +1,8 @@
-app.js
+//app.js
+//npx create-react-app news-fetcher
+//cd news-fetcher
+//npm start
+//npm install axios 
 
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
